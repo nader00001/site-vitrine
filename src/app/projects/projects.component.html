@@ -4,7 +4,7 @@
   <div class="projects-slider">
     <div class="slider-track">
       <div class="project-item" *ngFor="let image of projectImages">
-        <img [src]="'/assets/' + image" alt="Project Image" />
+        <img [src]="'assets/' + image" alt="Project Image" />
         <button (click)="openProjectModal(image)">En savoir plus</button>
       </div>
     </div>
