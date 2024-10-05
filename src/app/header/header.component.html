@@ -1,0 +1,32 @@
+<header class="header-container">
+  <div class="logo">
+    <a href="/">
+      <img src="assets/ag-1-01.png" alt="S.E.R.S. Logo" />
+    </a>
+  </div>
+  <div>
+    <h1>AK Ingénierie</h1>
+  </div>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-menu-icon" (click)="toggleMenu()">
+    <i class="pi pi-bars"></i>
+  </div>
+
+  <nav class="mobile-nav-menu" *ngIf="menuOpen">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>

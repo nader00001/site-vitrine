@@ -1,0 +1,17 @@
+<aside class="sidebar-container" [class.active]="isSidebarOpen">
+  <div class="sidebar-header">
+    <h2>Menu</h2>
+    <button class="close-btn" (click)="toggleSidebar()">&#10005;</button>
+  </div>
+
+  <ul class="sidebar-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</aside>
+
+<!-- Button to open the sidebar -->
+<button class="open-sidebar-btn" (click)="toggleSidebar()">&#9776;</button>

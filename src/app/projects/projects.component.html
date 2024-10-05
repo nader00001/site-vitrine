@@ -1,0 +1,15 @@
+<div class="projects-container">
+  <h2 style="color: #02538B;">Nos Projets</h2>
+
+  <div class="projects-slider">
+    <div class="slider-track">
+      <div class="project-item" *ngFor="let image of projectImages">
+        <img [src]="'/assets/' + image" alt="Project Image" />
+        <button (click)="openProjectModal(image)">En savoir plus</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <app-modal #projectModal [title]="selectedProjectTitle" [content]="selectedProjectContent"></app-modal>
+</div>

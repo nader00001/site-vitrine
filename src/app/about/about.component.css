@@ -1,0 +1,67 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; /* Utiliser 'stretch' pour que les enfants prennent la même hauteur */
+  padding: 40px;
+  background-color: #f9f9f9; /* Conserve la couleur de fond neutre */
+}
+
+.about-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #02538B; /* Bleu pour le titre */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #333; /* Couleur du texte plus sombre pour une meilleure lisibilité */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+  padding-left: 20px;
+  display: flex; /* Ajout pour un alignement vertical de l'image */
+  align-items: center; /* Centrer l'image verticalement */
+}
+
+.about-image img {
+  width: 100%; /* Assurez-vous que l'image remplit la largeur du conteneur */
+  height: auto; /* Supprimer la hauteur fixe pour permettre une adaptation automatique */
+  object-fit: cover; /* Maintenir le rapport d'aspect tout en couvrant l'espace */
+  border-radius: 10px;
+  border: 5px solid #E20E1A; /* Ajout d'une bordure rouge autour de l'image */
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-image {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}

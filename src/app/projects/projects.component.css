@@ -1,0 +1,68 @@
+.projects-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa; /* Couleur de fond neutre */
+}
+
+.projects-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Couleur sombre pour le titre */
+}
+
+.projects-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.project-item {
+  flex: 0 0 auto;
+  width: 200px; /* Largeur fixée */
+  margin-right: 20px;
+  position: relative;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto; /* Assurez-vous que l'image conserve ses proportions */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Adapte l'image pour qu'elle couvre entièrement l'élément parent */
+  aspect-ratio: 4/3; /* Ratio largeur/hauteur fixé à 4:3 */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  border: 5px solid #E20E1A; /* Bordure rouge autour de l'image */
+}
+
+button {
+  background-color: #E20E1A; /* Rouge pour le bouton */
+  color: white; /* Texte en blanc */
+  padding: 10px 15px; /* Ajout de padding pour le bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Arrondir les coins du bouton */
+  cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+  transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+button:hover {
+  background-color: #02538B; /* Changement de couleur au survol (bleu) */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 150px;
+  }
+}

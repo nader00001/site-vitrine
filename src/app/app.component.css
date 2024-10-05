@@ -1,0 +1,113 @@
+/* Base Styles for the App Component */
+/* Base Styles for the App Component */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Make sure no margins are added */
+  padding: 0; /* Ensure no padding */
+}
+
+/* Header Styling */
+app-header {
+  background-color: #003366;
+  color: white;
+  padding: 10px 0; /* Slight padding for spacing inside the header */
+  text-align: center;
+  margin: 0; /* No margin to prevent any spacing above */
+}
+
+/* Main Content Section */
+main {
+  flex: 1;
+  padding: 2px;
+  margin: 0; /* Ensure no extra margin */
+}
+
+/* Other components should follow similar structure */
+
+/* Home Section */
+app-home {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* About Section */
+app-about {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+/* Projects Section */
+app-projects {
+  padding: 40px 20px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+/* Contact Section */
+app-contact {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Footer Section */
+app-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  app-sidebar {
+    order: 2;
+  }
+
+  app-header {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  app-home, app-about, app-projects, app-contact {
+    padding: 20px 10px;
+  }
+
+  app-footer {
+    padding: 15px 10px;
+  }
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+  app-header {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  app-home, app-about, app-projects, app-contact {
+    padding: 15px 5px;
+  }
+
+  app-footer {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+}
+
+/* Mobile Menu Toggle for Sidebar */
+@media screen and (max-width: 600px) {
+  app-sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  /* Optionally, you can create a button to toggle the sidebar here */
+}

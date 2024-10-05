@@ -1,0 +1,85 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f0f0f0; /* Couleur de fond claire */
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e20e1a; /* Rouge correspondant à votre logo */
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #02538b; /* Bleu correspondant à votre logo */
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne */
+  margin-top: 20px; /* Espace entre le texte d'informations et les détails de contact */
+}
+
+.contact-item {
+  display: flex; /* Utilise Flexbox pour aligner les éléments à l'intérieur */
+  align-items: center; /* Centre verticalement le contenu */
+  margin-bottom: 10px; /* Ajoute un espace entre les lignes */
+}
+
+.contact-item strong {
+  color: #e20e1a; /* Rouge pour les titres */
+  margin-right: 10px; /* Espace entre le texte fort et l'icône */
+}
+
+.contact-item i {
+  color: #02538b; /* Bleu pour les icônes */
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+  font-size: 1.2rem; /* Taille personnalisée pour les icônes */
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  color: #333; /* Couleur générale pour le texte */
+}
+
+.contact-form {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.contact-image {
+  width: 100%; /* Assure que l'image prend toute la largeur de son conteneur */
+  height: auto; /* Maintient le ratio d'aspect */
+  max-width: 500px; /* Empêche que l'image devienne trop grande */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+  object-fit: cover; /* Évite la distorsion et maintient le ratio d'image */
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Colonne sur les petits écrans */
+  }
+
+  .contact-info {
+    padding-right: 0; /* Suppression de l'espace à droite sur les petits écrans */
+  }
+
+  .contact-form {
+    padding-left: 0; /* Suppression de l'espace à gauche sur les petits écrans */
+    margin-top: 20px; /* Ajout d'un espace au-dessus */
+  }
+
+  .contact-image {
+    max-width: 100%; /* Ajuste la largeur de l'image pour les petits écrans */
+  }
+}
