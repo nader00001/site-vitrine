@@ -6,6 +6,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ChiffresComponent } from './chiffres/chiffres.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route redirects to home
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   {path: 'sidebar' , component : SidebarComponent},
   {path : 'footer', component : FooterComponent},
+  {path :'services' , component : ServicesComponent},
   { path: '**', redirectTo: '/home' }  // Wildcard route to redirect to home if no match
 ];
 

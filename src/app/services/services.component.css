@@ -1,0 +1,239 @@
+/* Main Container */
+.home-container {
+  font-family: 'Arial', sans-serif; /* Keep a clean, modern font */
+  color: #333; /* General text color */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../../assets//paris-france-chantier-de-construction-nouveau-projet-d-architecture-moderne-palais-de-justice-national-eco-quartier-clichy-batignolles-architecte-renzo-piano-construction-de-batiments-modernes-.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Text color for the hero section */
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e20e1a; /* Red color for hero heading */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #e20e1a; /* Red color for buttons */
+  color: #fff; /* White text on buttons */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-btn:hover {
+  background-color: #b00a13; /* Darker red on hover */
+}
+
+/* About Us Section */
+.about-us-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about-us-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #02538b; /* Blue for section heading */
+}
+
+.about-us-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8; /* Increased line height for readability */
+}
+
+/* Our Services Section */
+.our-services {
+  padding: 50px;
+  text-align: center;
+}
+
+.our-services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #02538b; /* Blue for section heading */
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 10px;
+  width: 30%;
+  min-width: 250px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e20e1a; /* Red for service titles */
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .services-container {
+    flex-direction: column; /* Stack services vertically on smaller screens */
+    align-items: center; /* Center align for better aesthetics */
+  }
+
+  .service-card {
+    width: 80%; /* Full width on smaller screens */
+  }
+}
+
+
+.about-us-section {
+  padding: 40px; /* Ajoute de l'espace autour de la section */
+  background-color: #f7f7f7; /* Couleur de fond pour la section */
+  text-align: center; /* Centre le texte dans la section */
+}
+
+.about-us-section h2 {
+  font-size: 2.8rem; /* Augmente la taille de l'en-tête */
+  margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+  color: #02538b; /* Couleur bleu pour le titre */
+  font-weight: 700; /* Rend le titre plus gras */
+  text-transform: uppercase; /* Met le titre en majuscules pour plus d'impact */
+}
+
+.about-us-section p {
+  font-size: 1.3rem; /* Augmente la taille du texte */
+  margin-bottom: 30px; /* Ajoute de l'espace sous le paragraphe */
+  color: #555; /* Couleur de texte grise pour le paragraphe */
+  line-height: 1.6; /* Augmente l'espacement entre les lignes */
+}
+
+.intervention-list {
+  margin: 20px 0; /* Espace autour de la liste des interventions */
+}
+
+.intervention-item {
+  display: flex; /* Utilise Flexbox pour aligner l'icône et le texte */
+  align-items: center; /* Centre verticalement l'icône et le texte */
+  margin-bottom: 15px; /* Espace entre les éléments */
+}
+
+.intervention-item i {
+  font-size: 2rem; /* Taille de l'icône */
+  color: #e20e1a; /* Couleur de l'icône (rouge) */
+  margin-right: 15px; /* Espace entre l'icône et le texte */
+}
+
+.intervention-item span {
+  font-size: 1.2rem; /* Taille du texte */
+  color: #333; /* Couleur de texte pour une meilleure lisibilité */
+  line-height: 1.5; /* Améliore la lisibilité */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .about-us-section {
+    padding: 20px; /* Réduit l'espace pour les petits écrans */
+  }
+
+  .about-us-section h2 {
+    font-size: 2.2rem; /* Ajuste la taille de l'en-tête pour les petits écrans */
+  }
+
+  .about-us-section p,
+  .intervention-item span {
+    font-size: 1rem; /* Ajuste la taille du texte pour les petits écrans */
+  }
+
+  .intervention-item i {
+    font-size: 1.5rem; /* Ajuste la taille de l'icône pour les petits écrans */
+  }
+}
+
+
+/* Main Container */
+.home-container {
+  font-family: 'Arial', sans-serif; /* Keep a clean, modern font */
+  color: #333; /* General text color */
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets//paris-france-chantier-de-construction-nouveau-projet-d-architecture-moderne-palais-de-justice-national-eco-quartier-clichy-batignolles-architecte-renzo-piano-construction-de-batiments-modernes-.jpg') no-repeat center center / cover;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0% { background-image: url('../../assets/000101936_600x400_c.jpg'); }
+  25% { background-image: url('../../assets/escalier-erp-01-740x555.png'); }
+  50% { background-image: url('../../assets/architecture-triangle-structure-people-wallpaper-preview.jpg'); }
+  75% { background-image: url('../../assets/000102011_illustration_large.jpg'); }
+  100% { background-image: url('../../assets/ag-1-01.png'); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e20e1a; /* Red color for hero heading */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Rest of the CSS remains unchanged */

@@ -1,22 +1,17 @@
 <div class="app-container">
-  <!-- Sidebar Component -->
-  <app-sidebar></app-sidebar>
+  <!-- Sidebar Component (position fixe) -->
+  <app-sidebar class="sidebar"></app-sidebar>
 
-  <!-- Header Component -->
-  <app-header></app-header>
+  <div class="main-content">
+    <!-- Header Component (position fixe) -->
+    <app-header class="header"></app-header>
 
-  <!-- Home Component (Hero Section and Introduction) -->
-  <app-home></app-home>
+    <!-- Main area where routed components will be displayed -->
+    <div class="content">
+      <router-outlet></router-outlet> <!-- This will change according to the route -->
+    </div>
 
-  <!-- About Component -->
-  <app-about></app-about>
-
-  <!-- Projects Component (with horizontal scrolling images) -->
-  <app-projects></app-projects>
-
-  <!-- Contact Component -->
-  <app-contact></app-contact>
-
-  <!-- Footer Component -->
-  <app-footer></app-footer>
+    <!-- Footer Component (position fixe) -->
+    <app-footer class="footer"></app-footer>
+  </div>
 </div>

@@ -1,6 +1,6 @@
 <header class="header-container">
   <div class="logo">
-    <a href="/">
+    <a routerLink="/">
       <img src="assets/ag-1-01.png" alt="S.E.R.S. Logo" />
     </a>
   </div>
@@ -10,10 +10,11 @@
 
   <nav class="nav-menu">
     <ul>
-      <li><a href="home">Home</a></li>
-      <li><a href="about">About Us</a></li>
-      <li><a href="services">Services</a></li>
-      <li><a href="contact">Contact</a></li>
+      <li><a routerLink="home">Home</a></li>
+      <li><a routerLink="about">A Propos</a></li>
+      <li><a routerLink="services">Services</a></li>
+      <li><a routerLink="projects">Projets</a></li>
+      <li><a routerLink="contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -23,10 +24,10 @@
 
   <nav class="mobile-nav-menu" *ngIf="menuOpen">
     <ul>
-      <li><a href="home">Home</a></li>
-      <li><a href="about">About Us</a></li>
-      <li><a href="services">Services</a></li>
-      <li><a href="contact">Contact</a></li>
+      <li><a routerLink="home">Home</a></li>
+      <li><a routerLink="about">A Propos</a></li>
+      <li><a routerLink="services">Services</a></li>
+      <li><a routerLink="contact">Contact</a></li>
     </ul>
   </nav>
 </header>

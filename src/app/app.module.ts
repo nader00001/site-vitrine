@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ModalComponent } from './modal/modal.component';
+import { ChiffresComponent } from './chiffres/chiffres.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalComponent } from './modal/modal.component';
     AboutComponent,
     ContactComponent,
     SidebarComponent,
-    ModalComponent
+    ModalComponent,
+    ChiffresComponent
   ],
   imports: [
     BrowserModule,

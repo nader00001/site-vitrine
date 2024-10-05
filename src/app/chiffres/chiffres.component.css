@@ -1,7 +1,7 @@
 .projects-container {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f8f9fa; /* Couleur de fond neutre */
+  background-color: #cdcecf; /* Couleur de fond neutre */
 }
 
 .projects-container h2 {
@@ -22,7 +22,7 @@
 
 .project-item {
   flex: 0 0 auto;
-  width: 400px; /* Largeur fixée */
+  width: 200px; /* Largeur fixée */
   margin-right: 20px;
   position: relative;
 }
