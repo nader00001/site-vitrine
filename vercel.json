@@ -1,18 +1,12 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "src/index.html",
+      "src": "angular.json",
       "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "config": { "distDir": "dist/site-vitrine" }
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
